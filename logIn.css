@@ -1,0 +1,126 @@
+
+        
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        
+
+        .menu-btn {
+            display: none;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .form-container {
+            margin: auto;
+            width: 350px;
+            background: linear-gradient(to right, #8a4040, #e4c9c9); /* Gradient here */
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 20px 30px;
+        }
+
+        .title {
+            text-align: center;
+            margin: 10px 0 30px;
+            font-size: 28px;
+            font-weight: 800;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin-bottom: 15px;
+        }
+
+        .input {
+            border-radius: 20px;
+            border: 1px solid #c0c0c0;
+            padding: 12px 15px;
+        }
+
+        .page-link {
+            text-align: end;
+            color: #747474;
+            font-size: 9px;
+            cursor: pointer;
+        }
+
+        .form-btn {
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: none;
+            background: rgb(196, 196, 196);
+            color: white;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        .sign-up-label {
+            font-size: 10px;
+            color: black;
+            text-align: center;
+        }
+
+        .sign-up-link {
+            font-size: 11px;
+            text-decoration: underline;
+            color: black;
+            font-weight: 800;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .apple-login-button,
+        .google-login-button {
+            border-radius: 20px;
+            padding: 10px 15px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+                        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            font-size: 11px;
+        }
+
+        .apple-login-button {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .google-login-button {
+            border: 2px solid #747474;
+        }
+
+        @media (max-width: 768px) {
+            .navbar .menu {
+                display: none;
+                flex-direction: column;
+                background: #fffefe;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 200px;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+        }
+
+        
+ 

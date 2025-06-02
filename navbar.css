@@ -1,0 +1,115 @@
+/* General navbar styling */
+/* Import font styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #8a4040, #e4c9c9); /* Gradient here */
+}
+
+/* Logo font style */
+.navbar .logo h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: linear-gradient(to right, #978282, #ad5555); /* Gradient here */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f2545b; /* orange vibe */
+}
+
+.navbar .menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar .menu li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s;
+    padding: 5px 10px;
+}
+
+.navbar .menu li a:hover,
+.navbar .menu li a.active {
+    color: #ffffff;
+    border-bottom: 2px solid #000000;
+}
+
+.cart-count {
+    font-size: 12px;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+
+  
+/* Responsive menu button */
+.menu-btn {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .navbar .menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: white;
+        text-align: center;
+        display: none;
+        padding: 20px 0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .navbar .menu li {
+        margin: 10px 0;
+    }
+
+    .navbar .menu.show {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
+
+
+/* FOOTER */
+footer{
+    background: linear-gradient(to right, #978282, #ad5555); /* Gradient here */
+    height: 10vh;
+}
+
+footer p{
+    text-align: center;
+    line-height: 10vh;
+}
+
+footer p a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    
+}

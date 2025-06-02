@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>street wear vibe</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="prod.css">
+  <style>
+    .page-transition {
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: all 0.6s ease;
+    }
+
+    .page-transition.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  </style>
+</head>
+<body>
+  <!-- Wrap everything in transition container -->
+  <div class="page-transition">
+    <nav class="navbar">
+        <div class="logo"><h1>FLAMINGOO </h1></div>
+        <ul class="menu">
+          <li><a href="home.html" class="active"> Home </a></li>
+          <li><a href="login.html"> Log In </a></li>
+          <li><a href="shop.html"> Shop </a></li>
+          <li><a href="about.html"> About Us </a></li>
+          <li>
+            <a href="#" class="fas fa-shopping-cart">
+              <span class="cart-count">0</span>
+            </a>
+          </li>
+          
+        </ul>
+        <div class="menu-btn"><i class="fa fa-bars"></i></div>
+    </nav>
+
+    <section class="content">
+        <!--<h1>NEW ARRIVALS for men & women</h1>
+        <p>GET THE BEST FASHION ARRIVALS HERE</p>
+        <button>SHOP NOW</button>-->
+    </section>
+
+    <h1 class="pheading">OUR BEST SHIRTS</h1>
+
+    <section class="sec">
+        <div class="products">
+          
+          <div class="card">
+            <div class="img"><img src="t1.jpg" alt=""></div>
+            <div class="desc">UNISEX</div>
+            <div class="title">Y2K Vintage Graphic</div>
+            <div class="box">
+              <div class="price">₱950.00</div>
+              <button class="btn add-to-cart" data-name="Y2K Vintage Graphic" data-price="950">ADD TO CART</button>
+
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="img"><img src="t2.jpg" alt=""></div>
+            <div class="desc">UNISEX</div>
+            <div class="title">Vencae™ TEE - VAMP</div>
+            <div class="box">
+              <div class="price">₱850.00</div>
+              <button class="btn add-to-cart" data-name="Vencae™ TEE - VAMP" data-price="850">ADD TO CART</button>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="img"><img src="t3.jpg" alt=""></div>
+            <div class="desc">UNISEX</div>
+            <div class="title">Love Bomb Shirt - Tees</div>
+            <div class="box">
+              <div class="price">₱999.00</div>
+              <button class="btn add-to-cart" data-name="Love Bomb Shirt - Tees" data-price="999">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img"><img src="t4.jpg" alt=""></div>
+            <div class="desc">UNISEX</div>
+            <div class="title">Men Short Sleeved Y2k</div>
+            <div class="box">
+              <div class="price">₱950.00</div>
+              <button class="btn add-to-cart" data-name="Men Short Sleeved Y2k" data-price="950">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="products">
+          
+          <div class="card">
+            <div class="img"><img src="t5.jpg" alt=""></div>
+            <div class="desc">UNISEX</div>
+            <div class="title">LadyGuard Cypher tees T-Shirt</div>
+            <div class="box">
+              <div class="price">₱750.00</div>
+              <button class="btn add-to-cart" data-name="LadyGuard Cypher tees T-Shirt" data-price="750">ADD TO CART</button>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="img"><img src="j1.jpg" alt=""></div>
+            <div class="desc">UNISEX</div>
+            <div class="title">Two Face Graphic Tees jacket </div>
+            <div class="box">
+              <div class="price">₱1050.00</div>
+              <button class="btn add-to-cart" data-name="Two Face Graphic Tees jacket" data-price="1050">ADD TO CART</button>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="img"><img src="j2.jpg" alt=""></div>
+            <div class="desc">UNISEX</div>
+            <div class="title">Two Face jacket - limited edition</div>
+            <div class="box">
+              <div class="price">₱1699.00</div>
+              <button class="btn add-to-cart" data-name="Two Face jacket - limited edition" data-price="1699">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img"><img src="j3.jpg" alt=""></div>
+            <div class="desc">UNISEX</div>
+            <div class="title">DontBlameTheKids - limited edition</div>
+            <div class="box">
+              <div class="price">₱2599.00</div>
+              <button class="btn add-to-cart" data-name="DontBlameTheKids - limited edition" data-price="2599">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="products">
+          
+          <div class="card">
+            <div class="img"><img src="t6.jpg" alt=""></div>
+            <div class="desc">UNISEX</div>
+            <div class="title">Men's Portrait Printed Short Sleeve T-Shirt</div>
+            <div class="box">
+              <div class="price">₱799.00</div>
+              <button class="btn add-to-cart" data-name="Men's Portrait Printed Short Sleeve T-Shirt" data-price="799">ADD TO CART</button>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="img"><img src="t7.jpg" alt=""></div>
+            <div class="desc">UNISEX</div>
+            <div class="title">Vintage Oversized T-Shirt HipHop Eye Graphic</div>
+            <div class="box">
+              <div class="price">₱799.00</div>
+              <button class="btn add-to-cart" data-name="Vintage Oversized T-Shirt HipHop Eye Graphic" data-price="799">ADD TO CART</button>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="img"><img src="t8.jpg" alt=""></div>
+            <div class="desc">UNISEX</div>
+            <div class="title">Oversized Jersey x Adidas Tees</div>
+            <div class="box">
+              <div class="price">₱799.00</div>
+              <button class="btn add-to-cart" data-name="Oversized Jersey x Adidas Tees" data-price="799">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img"><img src="t9.jpg" alt=""></div>
+            <div class="desc">UNISEX</div>
+            <div class="title">Vintage Jersey Woodlise Tees</Canvas></div>
+            <div class="box">
+              <div class="price">₱899.00</div>
+              <button class="btn add-to-cart" data-name="Vintage Jersey Woodlise Tees" data-price="899">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <footer>
+        <p>© 2025 <a href="#">Flamingoo</a>. All rights reserved.</p>
+      </footer>
+  </div>
+
+  <!-- Existing menu toggle script -->
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const menu = document.querySelector('.menu');
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+
+  <!-- ✨ Page transition effect script -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelector('.page-transition').classList.add('active');
+    });
+
+    const links = document.querySelectorAll('a[href]');
+    links.forEach(link => {
+      const href = link.getAttribute('href');
+      if (href.startsWith('#') || href === '' || href === '#!') return;
+
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector('.page-transition').classList.remove('active');
+        setTimeout(() => {
+          window.location.href = href;
+        }, 600);
+      });
+    });
+  </script>
+
+<script>
+  const cart = [];
+  const cartCountEl = document.querySelector('.cart-count');
+
+  function updateCartCount() {
+    cartCountEl.textContent = cart.length;
+  }
+
+  const cartButtons = document.querySelectorAll('.add-to-cart');
+  cartButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const name = btn.getAttribute('data-name');
+      const price = parseFloat(btn.getAttribute('data-price'));
+      const item = { name, price };
+      cart.push(item);
+      updateCartCount();
+      console.log(`🛒 Added to cart:`, item);
+    });
+  });
+
+  updateCartCount(); // Set initial count
+</script>
+
+</body>
+</html>

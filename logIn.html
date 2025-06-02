@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>street wear vibe</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="navbar.css"/>
+  <link rel="stylesheet" href="logIn.css"/>
+</head>
+<body>
+
+
+    
+  <nav class="navbar">
+    <div class="logo"><h1>FLAMINGOO</h1></div>
+    <ul class="menu">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="login.html" class="active">Log In</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About Us</u></a></li>
+      <li><a href="#" class="fas fa-shopping-cart"></a></li>
+    </ul>
+    <div class="menu-btn"><i class="fa fa-bars"></i></div>
+  </nav>
+
+  <!-- Your login form HTML here (already working fine) -->
+  <div class="form-container">
+    <p class="title">Welcome back</p>
+    <form class="form">
+      <input type="email" class="input" placeholder="Email" />
+      <input type="password" class="input" placeholder="Password" />
+      <p class="page-link"><span class="page-link-label">Forgot Password?</span></p>
+      <button class="form-btn">Log in</button>
+    </form>
+    <p class="sign-up-label">Don't have an account? <a href="signUp.html" class="sign-up-link">Sign up</a></p>
+
+    <div class="buttons-container">
+      <div class="apple-login-button"><i class="fab fa-apple apple-icon"></i> <span>Log in with Apple</span></div>
+      <div class="google-login-button"><i class="fab fa-google google-icon"></i> <span>Log in with Google</span></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 <a href="#">Flamingoo</a>. All rights reserved.</p>
+  </footer>
+
+  <!-- Responsive navbar toggle script -->
+  <script>
+    const menuBtn = document.querySelector(".menu-btn");
+    const menu = document.querySelector(".menu");
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("show");
+    });
+  </script>
+
+  
+</body>
+</html>

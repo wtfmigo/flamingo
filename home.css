@@ -1,0 +1,72 @@
+/* Page transition effect */
+.page-transition {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.6s ease;
+}
+
+.page-transition.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Existing styles */
+.content {
+    background-image: url(landpage2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 5%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+}
+
+.content h1 {
+    font-size: 40px;
+}
+
+.content p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.content button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    background: rgb(29, 230, 2);
+    color: rgb(172, 0, 0);
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pheading {
+    text-align: center;
+    margin: 50px 0;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+/* Card Styles with Hover */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px;
+    max-width: 300px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+
